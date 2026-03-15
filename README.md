@@ -12,8 +12,11 @@ This project implements a simple variant-calling pipeline for analysing next-gen
 
 Sequencing reads were downloaded from the NCBI Sequence Read Archive (SRA).
 
-Example dataset used in this project:
-SRR2584866
+Accession: SRR2584866
+
+Paired-end reads:
+- SRR2584866_1.fasta.gz
+- SRR2584866_2.fasta.gz
 
 ## Project Workflow
 
@@ -48,6 +51,7 @@ variant-calling-pipeline
 ├── scripts/
 ├── results/
 ├── figures/
+├── data/
 ```
 
 ## Example Pipeline Commands
