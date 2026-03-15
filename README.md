@@ -1,6 +1,6 @@
 # Variant Calling Pipeline
 
-This repository contains a small next-generation sequencing (NGS) variant calling workflow built using standard genomics tools.
+This repository contains a small next-generation sequencing variant calling workflow built using standard genomics tools.
 
 The project follows a simple pipeline starting from publicly available sequencing reads, through quality control, alignment, BAM processing, variant calling, and visualisation of candidate variants in IGV.
 
