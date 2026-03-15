@@ -44,7 +44,7 @@ The analysis includes:
 
 ## Repository Structure
 
-````markdown
+```markdown
 variant-calling-pipeline
 │
 ├── README.md
@@ -109,3 +109,4 @@ Load the following files in IGV:
 - reference genome
 - sorted BAM file
 - VCF variant file
+
