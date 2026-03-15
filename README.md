@@ -44,13 +44,14 @@ The analysis includes:
 
 ## Repository Structure
 
-```markdown
+```text
 variant-calling-pipeline
 │
 ├── README.md
 ├── scripts/
 ├── results/
-└── figures/
+├── figures/
+```
 
 ## Example Pipeline Commands
 
