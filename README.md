@@ -131,3 +131,24 @@ Variants were inspected using Integrative Genomics Viewer (IGV) by loading:
 - the reference genome
 - `aligned_reads.sorted.bam`
 - `variants.vcf`
+
+## Quality Control
+
+Raw sequencing reads were assessed using **FastQC** to evaluate overall read quality before alignment.
+
+Both paired-end reads (`SRR2584866_1` and `SRR2584866_2`) were analysed and showed similar quality profiles. Representative plots from Read 1 are shown below.
+
+### Per base sequence quality
+![Per base sequence quality](figures/fastqc_per_base_quality_read1.png)
+
+This plot shows the distribution of quality scores across all bases in the reads. Most bases fall within the high-quality range, with a gradual decrease toward the end of the reads, which is typical for Illumina sequencing data.
+
+### Per sequence GC content
+![GC content](figures/fastqc_per_gc_content_read1.png)
+
+The GC distribution follows the expected theoretical distribution for human genomic data, indicating no major GC bias or contamination.
+
+### Sequence length distribution
+![Sequence length](figures/fastqc_sequence_length.png)
+
+All reads have a consistent length of **150 bp**, which matches the expected read length for the sequencing dataset.
