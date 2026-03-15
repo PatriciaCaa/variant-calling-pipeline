@@ -52,3 +52,60 @@ variant-calling-pipeline
 ├── results/
 └── figures/
 
+## Example Pipeline Commands
+
+### 1. Quality Control with FastQC
+
+```bash
+fastqc sample_reads.fastq
+```
+
+### 2. Index the Reference Genome
+
+```bash
+bwa index reference_genome.fasta
+```
+
+### 3. Align Reads with BWA MEM
+
+```bash
+bwa mem reference_genome.fasta sample_reads.fastq > aligned_reads.sam
+```
+
+### 4. Convert SAM to BAM
+
+```bash
+samtools view -Sb aligned_reads.sam > aligned_reads.bam
+```
+
+### 5. Sort BAM File
+
+```bash
+samtools sort aligned_reads.bam -o sorted_reads.bam
+```
+
+### 6. Index BAM File
+
+```bash
+samtools index sorted_reads.bam
+```
+
+### 7. Variant Calling with FreeBayes
+
+```bash
+freebayes -f reference_genome.fasta sorted_reads.bam > variants.vcf
+```
+
+### 8. Variant Annotation with VEP
+
+```bash
+vep -i variants.vcf -o annotated_variants.vcf --cache
+```
+
+### 9. Visualisation in IGV
+
+Load the following files in IGV:
+
+- reference genome
+- sorted BAM file
+- VCF variant file
