@@ -39,7 +39,8 @@ The analysis includes:
 - FreeBayes
 - Ensembl Variant Effect Predictor (VEP)
 - IGV
-**Variant annotation is performed using Ensembl Variant Effect Predictor (VEP) to identify the potential functional consequences of detected variants.
+  
+**Variant annotation is performed using Ensembl Variant Effect Predictor (VEP) to identify the potential functional consequences of detected variants.**
 
 ## Repository Structure
 
