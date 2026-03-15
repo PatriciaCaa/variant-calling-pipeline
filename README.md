@@ -6,18 +6,14 @@ The project follows a simple pipeline starting from publicly available sequencin
 
 ## Overview
 
-This project was created to practise the main steps involved in a short-read variant calling workflow using Linux command-line tools.
+This project implements a simple variant-calling pipeline for analysing next-generation sequencing data. The workflow includes read quality control, alignment to a reference genome, variant calling, annotation, and visualisation.
 
-The analysis includes:
+## Dataset
 
-- downloading sequencing reads
-- downloading the reference genome
-- performing quality control with FastQC
-- aligning reads with BWA
-- processing BAM files with SAMtools
-- calling variants with FreeBayes
-- annotation using VEP
-- inspecting variants in IGV
+Sequencing reads were downloaded from the NCBI Sequence Read Archive (SRA).
+
+Example dataset used in this project:
+SRR2584866
 
 ## Project Workflow
 
@@ -26,11 +22,12 @@ The analysis includes:
 3. Perform quality control with FastQC
 4. Align reads to the reference genome using BWA MEM
 5. Convert SAM to BAM using SAMtools
-6. Sort and index BAM files
-7. Call variants using FreeBayes
-8. Annotate variants using Ensembl Variant Effect Predictor (VEP)
-9. Visualise candidate variants in IGV
-
+6. Sort BAM file using SAMtools
+7. Index BAM file using SAMtools
+8. Call variants using FreeBayes
+9. Annotate variants using Ensembl Variant Effect Predictor (VEP)
+10. Visualise candidate variants in IGV
+    
 ## Tools Used
 
 - FastQC
