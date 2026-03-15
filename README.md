@@ -16,6 +16,7 @@ The analysis includes:
 - aligning reads with BWA
 - processing BAM files with SAMtools
 - calling variants with FreeBayes
+- annotation using VEP
 - inspecting variants in IGV
 
 ## Project Workflow
@@ -27,7 +28,8 @@ The analysis includes:
 5. Convert SAM to BAM using SAMtools
 6. Sort and index BAM files
 7. Call variants using FreeBayes
-8. Visualise candidate variants in IGV
+8. Annotate variants using Ensembl Variant Effect Predictor (VEP)
+9. Visualise candidate variants in IGV
 
 ## Tools Used
 
@@ -35,7 +37,10 @@ The analysis includes:
 - BWA
 - SAMtools
 - FreeBayes
+- Ensembl Variant Effect Predictor (VEP)
 - IGV
+
+**Variant annotation is performed using Ensembl Variant Effect Predictor (VEP) to identify the potential functional consequences of detected variants.
 
 ## Repository Structure
 
@@ -46,3 +51,4 @@ variant-calling-pipeline
 ├── scripts/
 ├── results/
 └── figures/
+
