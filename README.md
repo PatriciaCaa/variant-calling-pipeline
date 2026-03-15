@@ -111,3 +111,15 @@ Load the following files in IGV:
 - sorted BAM file
 - VCF variant file
 
+## Results
+
+The pipeline successfully produced aligned reads, variant calls, and annotated variants.
+
+Key output files generated during the analysis include:
+
+- `sorted_reads.bam` – sorted alignment file used for downstream analysis  
+- `variants.vcf` – variants identified using FreeBayes  
+
+### Variant Visualisation
+
+Candidate variants were inspected using **Integrative Genomics Viewer (IGV)** by loading the reference genome, the sorted BAM file, and the variant VCF file. This allows visual confirmation of variant positions and read support.
